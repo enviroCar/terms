@@ -1,4 +1,4 @@
-let date = new Date().toISOString().substring(0,10)
+let date = new Date().toISOString().substring(0, 10);
 
 db.termsOfUse.remove({issuedDate: date});
 db.termsOfUse.insert({
