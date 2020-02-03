@@ -7,9 +7,9 @@ db.termsOfUse.insert({
   _id: new ObjectId(),
   created: date + "T12:00:00Z",
   issuedDate: date,
-  contents: cat("TOU_EN.html").replace(" +", " "),
+  contents: cat("terms_of_use_en.html").replace(" +", " "),
   translations: {
-    de: cat("TOU_DE.html").replace(" +", " ")
+    de: cat("terms_of_use_de.html").replace(" +", " ")
   }
 });
 
@@ -18,8 +18,8 @@ db.privacyStatements.insert({
   _id: new ObjectId(),
   created: date + "T12:00:00Z",
   issuedDate: date,
-  contents: cat("dataPriv_EN.html").replace(" +", " "),
+  contents: cat("privacy_statement_en.html").replace(" +", " "),
   translations: {
-    de: cat("dataPriv_DE.html").replace(" +", " ")
+    de: cat("privacy_statement_de.html").replace(" +", " ")
   }
 });
